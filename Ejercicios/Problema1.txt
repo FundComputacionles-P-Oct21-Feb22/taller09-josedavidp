@@ -1,0 +1,14 @@
+1. Inicio
+2. (rojo(4)(4), i[0-n])
+3. rojo <-- {{20, 30, 40,50}, {2, 3, 4,5},{200, 300, 400,500},{10, 11,12,14}}
+4. fila,  i[0-n]
+5. columna, i[0-n]
+6.
+7.  Para(fila <-- 1,fila < 4, 1) haga
+8.  	Para(columna <-- 0,columna < 3, 1) haga
+9.      	Si fila > columna entonces
+10.         	Escribir rojo [fila][columna]
+11.         Fin Si
+12.     Fin Para
+13. Fin Para
+14.Fin

@@ -1,0 +1,30 @@
+1. Inicio
+
+2. (notas(3)(4), d[1-n])
+3. (estudiantes(3), x(100)[{A-Z}, {a-z}, {BS}])
+4. (promedios(3), d[1-n])
+5. fila, i[0-n]
+6. columna, i[0-n]
+7. valor, i[0-n]
+8. cadena, x(100)[{A-Z}, {a-z}, {BS}, {1-n}]<-- " "
+9. promedio, d [0-n] <-- 0
+
+10. notas <-- {{9, 10, 7, 8}, {10, 5, 7, 9}, {7, 9.4, 10, 9}}
+11. estudiantes <-- {{"Jerry Ponce", "Gabriela Lewis", "David Bell"}}
+12. promedios <-- {{}}
+
+13. Para(fila<--0, fila<3, 1) haga 
+14.		suma <-- 0
+15.			Para(columna<--0, columna<4, 1) haga 
+16.				suma = suma + notas [fila][columna] 
+17. 		Fin Para
+18.	promedio = suma / (columna) 
+19.	promedios [fila] <-- promedio 
+20. Fin Para
+
+21. Para(indice <-- 0, indice < 3, 1) haga 
+22. 	cadena <-- cadena + "Estudiante: " + estudiantes[indice] + "tiene un promedio de " + promedios[indice] + "\n"
+23. Fin Para
+
+24. Escribir cadena
+25. Fin
